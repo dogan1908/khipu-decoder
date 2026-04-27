@@ -1,0 +1,37 @@
+MIT License
+
+Copyright (c) 2026 Dogan Balban
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Note on data licensing:
+
+The khipu data bundled within the HTML files of this repository was derived
+from the Open Khipu Repository / Harvard Khipu Database Project
+(http://khipukamayuq.fas.harvard.edu/), which is maintained by Harvard
+University. Use of that data may be subject to terms set by Harvard and the
+project's principal investigators (Gary Urton, Carrie Brezine, et al.).
+Users wishing to redistribute or build upon the embedded data should consult
+the original source for its licensing terms.
+
+The Quechua wordlist and the Quechua gematria system embedded in this tool
+are original work by Dogan Balban (2026), released under the MIT license
+above.

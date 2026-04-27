@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Primary SEO -->
+<title>Khipu Decoder · Quechua Gematria — Interactive Tool for Inca Knot Records</title>
+<meta name="description" content="Free interactive tool for decoding 629 Inca khipus from the Harvard Open Khipu Repository through Quechua phonosemantic gematria. 557 categorized words, knot-value matching, radial mindmap visualization. By Dogan Balban (2026).">
+<meta name="keywords" content="khipu, quipu, khipu decoder, quipu decoder, Inca, Inca knot records, Andean knot writing, Quechua language, Quechua gematria, phonosemantics, Open Khipu Repository, Harvard Khipu Database, Andean studies, pre-Columbian, ethnomathematics, numerology, consonant digit mapping, Cuzco-Collao Quechua, knot value decoding, UR281, Pachacamac khipus, Nazca khipus, Inca writing system, Tawantinsuyu, Dogan Balban, Khipukamayuq, computational linguistics, ancient script">
+<meta name="author" content="Dogan Balban">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://dogan1908.github.io/khipu-decoder/">
+
+<!-- Hreflang for both language editions -->
+<link rel="alternate" hreflang="en" href="https://dogan1908.github.io/khipu-decoder/khipu-decoder_v10_en.html">
+<link rel="alternate" hreflang="de" href="https://dogan1908.github.io/khipu-decoder/khipu-decoder_v10.html">
+<link rel="alternate" hreflang="x-default" href="https://dogan1908.github.io/khipu-decoder/">
+
+<!-- Open Graph (Facebook, LinkedIn, Discord, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dogan1908.github.io/khipu-decoder/">
+<meta property="og:title" content="Khipu Decoder · Quechua Gematria — Interactive Tool for Inca Knot Records">
+<meta property="og:description" content="Decode 629 Inca khipus through Quechua phonosemantic gematria. 557 categorized words, knot-to-word matching, interactive mindmap. Free, open-source, browser-based.">
+<meta property="og:site_name" content="Khipu Decoder">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:image" content="https://dogan1908.github.io/khipu-decoder/docs/preview.png">
+<meta property="og:image:alt" content="Radial mindmap of Quechua words organized by consonant class and semantic category, generated from the khipu UR281">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Khipu Decoder · Quechua Gematria">
+<meta name="twitter:description" content="Decode 629 Inca khipus through Quechua phonosemantic gematria. 557 categorized words, interactive mindmap.">
+<meta name="twitter:image" content="https://dogan1908.github.io/khipu-decoder/docs/preview.png">
+
+<!-- Theme color for browser UI -->
+<meta name="theme-color" content="#0c0d10">
+
+<!-- JSON-LD structured data: SoftwareApplication + Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://dogan1908.github.io/khipu-decoder/#tool",
+      "name": "Khipu Decoder · Quechua Gematria",
+      "alternateName": ["Quipu Decoder", "Inca Knot Records Decoder"],
+      "url": "https://dogan1908.github.io/khipu-decoder/",
+      "applicationCategory": "EducationalApplication",
+      "applicationSubCategory": "Linguistic Analysis Tool",
+      "operatingSystem": "Any (modern web browser: Chrome, Firefox, Safari, Edge)",
+      "browserRequirements": "Requires JavaScript",
+      "softwareVersion": "10",
+      "datePublished": "2026-04",
+      "inLanguage": ["en", "de"],
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "license": "https://opensource.org/licenses/MIT",
+      "description": "An interactive single-file web tool for browsing and decoding 629 historical khipus (Andean knot records) from the Open Khipu Repository through a phonosemantic Quechua gematria system. Maps consonant classes to digits 0-9, allowing knot values to be decoded as Quechua syllables and matched against a database of 557 categorized words.",
+      "keywords": "khipu, quipu, Inca, Quechua, gematria, phonosemantics, Andean studies, ethnomathematics, knot records, Open Khipu Repository",
+      "creator": {
+        "@id": "https://orcid.org/0009-0002-5052-6951"
+      },
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/dogan1908/khipu-decoder",
+      "programmingLanguage": ["JavaScript", "HTML", "CSS", "SVG"],
+      "featureList": [
+        "Browse 629 khipus from Harvard Open Khipu Repository",
+        "Search by ID, provenance, museum, Quechua word or gematria value",
+        "557-word Quechua database in 15 semantic categories",
+        "Per-cord gematria decoding with consonant-class breakdown",
+        "Khipu-aware radial mindmap visualization",
+        "Three switchable gematria systems: Quechua, Katapayadi, Custom",
+        "Σ-checksum and structural marker detection"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0002-5052-6951",
+      "name": "Dogan Balban",
+      "identifier": "https://orcid.org/0009-0002-5052-6951",
+      "url": "https://github.com/dogan1908",
+      "sameAs": [
+        "https://orcid.org/0009-0002-5052-6951",
+        "https://github.com/dogan1908"
+      ],
+      "jobTitle": "Independent Researcher",
+      "knowsAbout": [
+        "Number theory",
+        "Quechua linguistics",
+        "Khipu studies",
+        "Phonosemantics",
+        "Gematria",
+        "Andean ethnomathematics"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "Khipu Decoder Embedded Dataset",
+      "description": "629 khipus with 40,970 cord values, derived from the Open Khipu Repository, paired with 557 categorized Quechua words.",
+      "creator": {"@id": "https://orcid.org/0009-0002-5052-6951"},
+      "isBasedOn": {
+        "@type": "Dataset",
+        "name": "Open Khipu Repository / Harvard Khipu Database",
+        "url": "http://khipukamayuq.fas.harvard.edu/"
+      },
+      "license": "https://opensource.org/licenses/MIT",
+      "variableMeasured": ["cord ordinal", "cord value", "khipu provenance", "museum"]
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+ --bg: #0c0d10;
+ --bgc: #13151b;
+ --bgr: #181a22;
+ --fg: #e4e1d8;
+ --fm: #8a8678;
+ --fd: #5a574e;
+ --bd: #262830;
+ --ac: #e8a838;
+ --ac2: #4eaa8a;
+ --ad: rgba(232,168,56,.1);
+ --ad2: rgba(78,170,138,.1);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+ background: var(--bg);
+ color: var(--fg);
+ line-height: 1.6;
+ min-height: 100vh;
+ background-image:
+   radial-gradient(circle at 20% 10%, rgba(232,168,56,.04), transparent 40%),
+   radial-gradient(circle at 80% 90%, rgba(78,170,138,.04), transparent 40%);
+}
+.container { max-width: 920px; margin: 0 auto; padding: 24px 18px 60px; }
+
+/* HERO */
+header.hero {
+ text-align: center;
+ padding: 32px 12px 20px;
+ border-bottom: 1px solid var(--bd);
+ margin-bottom: 30px;
+}
+.hero .glyph { font-size: 56px; margin-bottom: 8px; line-height:1; }
+.hero h1 {
+ font-size: 28px;
+ font-weight: 300;
+ color: var(--ac);
+ letter-spacing: 0.5px;
+ margin-bottom: 6px;
+}
+.hero h1 strong { font-weight: 700; }
+.hero .tagline {
+ font-size: 13px;
+ color: var(--fm);
+ max-width: 580px;
+ margin: 0 auto 14px;
+}
+.hero .stats {
+ display: inline-flex;
+ gap: 20px;
+ padding: 8px 18px;
+ background: var(--bgc);
+ border: 1px solid var(--bd);
+ border-radius: 24px;
+ font-size: 11px;
+ color: var(--fm);
+ font-family: 'JetBrains Mono', 'SF Mono', monospace;
+}
+.hero .stats strong { color: var(--ac2); }
+
+/* LANGUAGE PICKER */
+section.lang-picker {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 18px;
+ margin: 30px 0 36px;
+}
+@media (max-width: 580px) {
+ section.lang-picker { grid-template-columns: 1fr; }
+}
+a.lang-card {
+ display: block;
+ background: var(--bgc);
+ border: 1px solid var(--bd);
+ border-radius: 12px;
+ padding: 24px 22px;
+ text-decoration: none;
+ color: var(--fg);
+ transition: all 0.2s;
+ position: relative;
+ overflow: hidden;
+}
+a.lang-card::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0; right: 0;
+ height: 3px;
+ background: var(--ac);
+ transform: translateY(-100%);
+ transition: transform 0.2s;
+}
+a.lang-card:hover {
+ border-color: var(--ac);
+ background: linear-gradient(180deg, var(--ad), var(--bgc));
+ transform: translateY(-2px);
+}
+a.lang-card:hover::before { transform: translateY(0); }
+a.lang-card .flag { font-size: 32px; line-height: 1; margin-bottom: 8px; }
+a.lang-card .lname {
+ font-size: 18px;
+ font-weight: 600;
+ color: var(--ac);
+ margin-bottom: 4px;
+}
+a.lang-card .lnative { font-size: 11px; color: var(--fm); margin-bottom: 10px; }
+a.lang-card .ldesc { font-size: 12px; color: var(--fg); line-height: 1.5; }
+a.lang-card .lcta {
+ display: inline-block;
+ margin-top: 10px;
+ font-size: 11px;
+ color: var(--ac2);
+ font-family: 'JetBrains Mono', monospace;
+}
+
+/* CONTENT */
+section.content { margin-bottom: 36px; }
+section.content h2 {
+ font-size: 16px;
+ color: var(--ac);
+ font-weight: 600;
+ margin-bottom: 12px;
+ padding-bottom: 6px;
+ border-bottom: 1px solid var(--bd);
+}
+section.content h3 {
+ font-size: 13px;
+ color: var(--ac2);
+ font-weight: 600;
+ margin: 16px 0 6px;
+}
+section.content p {
+ font-size: 13px;
+ color: var(--fg);
+ margin-bottom: 12px;
+}
+section.content p.subdued {
+ font-size: 12px;
+ color: var(--fm);
+}
+section.content ul {
+ list-style: none;
+ padding: 0;
+}
+section.content ul li {
+ font-size: 12px;
+ padding: 6px 0 6px 18px;
+ position: relative;
+ color: var(--fg);
+ border-bottom: 1px dotted var(--bd);
+}
+section.content ul li::before {
+ content: '▸';
+ position: absolute;
+ left: 0;
+ color: var(--ac);
+}
+section.content ul li:last-child { border-bottom: none; }
+section.content ul li strong { color: var(--ac); }
+
+/* GEMATRIA TABLE */
+.gem-mini {
+ background: var(--bgc);
+ border: 1px solid var(--bd);
+ border-radius: 8px;
+ padding: 14px;
+ margin: 12px 0;
+ font-family: 'JetBrains Mono', 'SF Mono', monospace;
+ font-size: 11px;
+ overflow-x: auto;
+}
+.gem-mini table { width: 100%; border-collapse: collapse; }
+.gem-mini td { padding: 4px 10px; }
+.gem-mini td:first-child {
+ color: var(--ac);
+ font-weight: 700;
+ width: 28px;
+}
+.gem-mini td:nth-child(2) {
+ color: var(--ac2);
+ width: 200px;
+}
+.gem-mini td:last-child { color: var(--fm); }
+
+/* CITATION BOX */
+.citation {
+ background: var(--bgc);
+ border: 1px solid var(--bd);
+ border-left: 3px solid var(--ac2);
+ border-radius: 5px;
+ padding: 12px 16px;
+ font-family: 'JetBrains Mono', 'SF Mono', monospace;
+ font-size: 11px;
+ color: var(--fm);
+ margin: 12px 0;
+ overflow-x: auto;
+ white-space: pre;
+}
+
+/* FOOTER */
+footer {
+ margin-top: 40px;
+ padding-top: 20px;
+ border-top: 1px solid var(--bd);
+ font-size: 11px;
+ color: var(--fd);
+ display: flex;
+ flex-wrap: wrap;
+ gap: 14px;
+ justify-content: space-between;
+ align-items: center;
+}
+footer a {
+ color: var(--ac2);
+ text-decoration: none;
+ transition: color 0.15s;
+}
+footer a:hover { color: var(--ac); }
+footer .meta { font-family: 'JetBrains Mono', monospace; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- ──────────────────  HERO  ────────────────── -->
+<header class="hero">
+ <div class="glyph">🪢</div>
+ <h1><strong>Khipu Decoder</strong> · Quechua Gematria</h1>
+ <p class="tagline">An interactive open-source tool for exploring Inca khipus through phonosemantic Quechua gematria. Free, browser-based, no installation required.</p>
+ <div class="stats">
+  <span><strong>629</strong> khipus</span>
+  <span><strong>40,970</strong> knot values</span>
+  <span><strong>557</strong> Quechua words</span>
+  <span><strong>15</strong> semantic categories</span>
+ </div>
+</header>
+
+<!-- ──────────────────  LANGUAGE PICKER  ────────────────── -->
+<section class="lang-picker" aria-label="Select language version">
+ <a class="lang-card" href="khipu-decoder_v10_en.html" hreflang="en" lang="en">
+  <div class="flag">🇬🇧</div>
+  <div class="lname">English</div>
+  <div class="lnative">Open in English</div>
+  <div class="ldesc">Browse all 629 khipus, search Quechua words and gematria values, explore the radial mindmap visualization.</div>
+  <div class="lcta">→ launch khipu-decoder_v10_en.html</div>
+ </a>
+ <a class="lang-card" href="khipu-decoder_v10.html" hreflang="de" lang="de">
+  <div class="flag">🇩🇪</div>
+  <div class="lname">Deutsch</div>
+  <div class="lnative">Auf Deutsch öffnen</div>
+  <div class="ldesc">629 Khipus durchsuchen, Quechua-Wörter und Gematria-Werte erkunden, die radiale Mindmap nutzen.</div>
+  <div class="lcta">→ khipu-decoder_v10.html starten</div>
+ </a>
+</section>
+
+<!-- ──────────────────  ABOUT  ────────────────── -->
+<section class="content" id="about">
+ <h2>About this tool</h2>
+ <p>This tool brings together two distinct bodies of evidence about the pre-Columbian Andean world: the corpus of <strong>khipus</strong> — knotted cord records used by the Inca and earlier Andean civilizations — and the lexicon of <strong>Quechua</strong>, the language family spoken across the Andes from before the Inca expansion to the present day. The 629 khipus included here are drawn from the <a href="http://khipukamayuq.fas.harvard.edu/" target="_blank" rel="noopener">Open Khipu Repository</a>, the public dataset assembled by the Khipu Database Project at Harvard University.</p>
+
+ <p>The decoder operates on a <strong>phonosemantic gematria hypothesis</strong>: each digit 0–9 is mapped to a class of Quechua consonants according to articulatory features (nasals, uvulars, liquids, laterals, labials, dentals, sibilants, plosives, aspirates, ejectives). A multi-digit cord value such as 75 is read as a sequence of consonant-vowel syllables (P+a · M+a → <em>puma</em>, "mountain lion") and matched against a curated database of Quechua words categorized into 15 semantic fields (water, plant, animal, body, human, spirit, tool, place, time, number, action, quality, food, weather, social).</p>
+</section>
+
+<!-- ──────────────────  FEATURES  ────────────────── -->
+<section class="content" id="features">
+ <h2>Features</h2>
+ <ul>
+  <li><strong>Khipu browser</strong> — 629 khipus searchable by ID, provenance, museum, OKR number, Quechua word or numeric value. Search results flag khipus containing matching values with ⚡N counters.</li>
+  <li><strong>Per-cord gematria decoding</strong> — each cord value is broken into digits, mapped to consonant classes, expanded into all syllable combinations, and matched against the word database with category badges.</li>
+  <li><strong>Word browser by category</strong> — 557 Quechua words filtered by combinable category and free-text search. Each word lists every khipu containing its gematria value as clickable chips.</li>
+  <li><strong>Khipu-aware mindmap</strong> — radial SVG visualization. When a khipu is selected, the mindmap shows only the words whose values occur in that khipu, with cluster sizes scaled by occurrence frequency.</li>
+  <li><strong>Three gematria systems</strong> — Quechua phonosemantic (Balban 2026, UR281-verified), Katapayadi (Sanskrit), and a fully editable custom system.</li>
+  <li><strong>Structural analysis</strong> — automatic detection of repeated marker values, Σ-checksum candidates, and group boundaries within each khipu.</li>
+  <li><strong>Self-contained, offline-capable</strong> — single HTML file, no build step, no framework, no backend. Runs entirely in the browser.</li>
+ </ul>
+</section>
+
+<!-- ──────────────────  GEMATRIA  ────────────────── -->
+<section class="content" id="gematria">
+ <h2>Quechua gematria system</h2>
+ <p class="subdued">The phonosemantic mapping (Balban 2026): each digit corresponds to a class of Quechua consonants grouped by place and manner of articulation.</p>
+ <div class="gem-mini" role="table" aria-label="Quechua gematria mapping table">
+ <table>
+ <tr><td>0</td><td>N · Ñ</td><td>Nasal → emptiness, negation</td></tr>
+ <tr><td>1</td><td>K · Q · Y</td><td>Uvular / velar / semivowel</td></tr>
+ <tr><td>2</td><td>R · H</td><td>Liquid + breath</td></tr>
+ <tr><td>3</td><td>L · Ll</td><td>Lateral → flow</td></tr>
+ <tr><td>4</td><td>W</td><td>Labial semivowel → wind</td></tr>
+ <tr><td>5</td><td>M</td><td>Labial nasal → mother / earth</td></tr>
+ <tr><td>6</td><td>T · Ch · S</td><td>Dental / palatal / sibilant</td></tr>
+ <tr><td>7</td><td>P</td><td>Labial plosive</td></tr>
+ <tr><td>8</td><td>Kh · Qh · Ph · Th · Chh</td><td>Aspirates</td></tr>
+ <tr><td>9</td><td>K' · Q' · P' · T' · Ch'</td><td>Ejectives → compressed flow</td></tr>
+ </table>
+ </div>
+ <p class="subdued">Worked example: cord value <strong style="color:var(--ac)">75</strong> → digits [7, 5] → consonants [P, M] → syllables {pa-ma, pu-ma, pi-mi, …} → match: <strong style="color:var(--ac)">puma</strong> ("mountain lion") in 50 khipus across the corpus.</p>
+</section>
+
+<!-- ──────────────────  DATA  ────────────────── -->
+<section class="content" id="data">
+ <h2>Data sources</h2>
+ <p><strong>Khipu corpus.</strong> The 629 khipus and their 40,970 cord values are derived from the <a href="http://khipukamayuq.fas.harvard.edu/" target="_blank" rel="noopener">Open Khipu Repository</a> (Harvard Khipu Database Project), a longstanding effort by Gary Urton, Carrie Brezine and collaborators to digitize and standardize records from museum collections worldwide. Cord values are extracted from the public SQLite distribution.</p>
+ <p><strong>Quechua wordlist.</strong> 557 words compiled from standard Cuzco-Collao Quechua reference dictionaries; gematria values computed using the phonosemantic system above. Categorization assigned by keyword heuristics over English glosses, then manually refined.</p>
+</section>
+
+<!-- ──────────────────  CITATION  ────────────────── -->
+<section class="content" id="citation">
+ <h2>How to cite</h2>
+ <div class="citation">@misc{balban2026khipu,
+  author       = {Balban, Dogan},
+  title        = {Khipu Decoder · Quechua Gematria: An Interactive
+                  Phonosemantic Tool for Andean Knot Records},
+  year         = {2026},
+  howpublished = {\url{https://github.com/dogan1908/khipu-decoder}},
+  note         = {ORCID: 0009-0002-5052-6951}
+}</div>
+ <p class="subdued">Please credit the underlying khipu dataset independently when citing data: Urton, G. & Brezine, C. J. (2005–2024). <em>Khipu Database</em>. Harvard University. <a href="http://khipukamayuq.fas.harvard.edu/" target="_blank" rel="noopener">khipukamayuq.fas.harvard.edu</a></p>
+</section>
+
+<!-- ──────────────────  FOOTER  ────────────────── -->
+<footer>
+ <div class="meta">
+  v10 · MIT License · 2026
+ </div>
+ <div>
+  <a href="https://github.com/dogan1908/khipu-decoder" target="_blank" rel="noopener">GitHub</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/dogan1908/khipu-decoder/blob/main/README.md" target="_blank" rel="noopener">README</a>
+  &nbsp;·&nbsp;
+  <a href="https://orcid.org/0009-0002-5052-6951" target="_blank" rel="noopener">ORCID</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/dogan1908/khipu-decoder/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+ </div>
+</footer>
+
+</div>
+
+</body>
+</html>
