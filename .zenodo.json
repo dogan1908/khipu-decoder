@@ -1,0 +1,30 @@
+{
+  "title": "Khipu Decoder · Quechua Gematria",
+  "description": "An interactive open-source tool for exploring 629 Inca khipus through phonosemantic Quechua gematria. Includes a 1,855-word filtered pre-Columbian Quechua lexicon.",
+  "license": "MIT",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Balban, Dogan",
+      "orcid": "0009-0002-5052-6951"
+    }
+  ],
+  "keywords": [
+    "khipu",
+    "quipu",
+    "Quechua",
+    "gematria",
+    "phonosemantics",
+    "Inca",
+    "Andean studies",
+    "ethnomathematics",
+    "digital humanities"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/dogan1908/khipu-decoder",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
