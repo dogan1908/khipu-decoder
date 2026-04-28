@@ -2,7 +2,7 @@
 
 > An interactive single-file web tool for exploring Andean knot records (khipus) through a phonosemantic gematria lens.
 
-![Status](https://img.shields.io/badge/version-v11-orange) ![License](https://img.shields.io/badge/license-MIT-green) ![Khipus](https://img.shields.io/badge/khipus-629-blue) ![Words](https://img.shields.io/badge/Quechua%20words-1855-purple)
+![Status](https://img.shields.io/badge/version-v11-orange) ![License](https://img.shields.io/badge/license-MIT-green) ![Khipus](https://img.shields.io/badge/khipus-629-blue) ![Words](https://img.shields.io/badge/Quechua%20words-1855-purple) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19863852.svg)](https://doi.org/10.5281/zenodo.19863852)
 
 ## Overview
 
@@ -147,14 +147,20 @@ python tools/prequechua_filter.py
 If you use this tool or the lexicon in academic work, please cite:
 
 ```bibtex
-@misc{balban2026khipu,
+@software{balban2026khipu,
   author       = {Balban, Dogan},
-  title        = {Khipu Decoder · Quechua Gematria: An Interactive Phonosemantic Tool for Andean Knot Records},
+  title        = {Khipu Decoder · Quechua Gematria: An Interactive
+                  Phonosemantic Tool for Andean Knot Records},
   year         = {2026},
-  howpublished = {\url{https://github.com/dogan1908/khipu-decoder}},
+  publisher    = {Zenodo},
+  version      = {v11.01},
+  doi          = {10.5281/zenodo.19863852},
+  url          = {https://doi.org/10.5281/zenodo.19863852},
   note         = {ORCID: 0009-0002-5052-6951}
 }
 ```
+
+For citing this specific version (v11.01) instead of the latest, use DOI `10.5281/zenodo.19863853`.
 
 The underlying khipu dataset is from the Harvard Khipu Database Project — please credit it independently when citing data, e.g.:
 
